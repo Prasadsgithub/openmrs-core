@@ -26,8 +26,8 @@ services:
             - db-data:/var/lib/mysql
 
     api:
-        image: openmrs/openmrs-core:${TAG:-head}
-        build: .
+        image: openmrs-v.10: task4
+        # build: .
         depends_on:
             - db
         ports:
